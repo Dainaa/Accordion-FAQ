@@ -1,0 +1,190 @@
+@import url('https://fonts.googleapis.com/css2?family=Kumbh+Sans&display=swap');
+html{
+    min-height:100%;
+    background-image: linear-gradient(hsl(273, 75%, 66%),hsl(240, 73%, 65%));
+}
+body{
+    width: 100%;
+    height: 100%;
+    margin:0px;
+    font-family: 'Kumbh Sans', sans-serif;
+    
+}
+.header-container{
+    margin-top: 2.2em;
+    margin-left:55%;
+    font-size: 1.8em;
+    font-weight: bolder;
+    color:hsl(237, 12%, 33%);
+    
+}
+
+.questions-container{
+    padding: 0.1em 1.6em 1.2em 1.3em;
+    margin-left:49%;
+    font-size: 13px;
+    color:hsl(240, 6%, 50%);
+    font-weight: 400;
+    line-height: 1em;
+}
+.content{
+    font-size: 12px;
+    color: hsl(240,6%,50%);
+}
+.questions-container ul{
+    list-style-type: none;
+}
+
+.divider{
+    width: 85%;
+    margin-left: 0;
+    background-color:hsl(240, 6%, 50%);
+    border-top:0.5px;
+}
+
+.questions-container ul li p{
+    width: 85%;
+}
+
+.collapsible:hover{
+    color:hsl(14, 88%, 65%);
+}
+
+.active, .collapsible::after{
+    color: hsl(238, 29%, 16%);
+    font-weight: 700;
+
+}
+.collapsible{
+    cursor: pointer;
+}
+
+.collapsible::after{
+    content:url(../img/icon-arrow-down.svg);
+    float: right;
+    animation: rotateup 0.5s;
+    animation-direction: reverse;
+    animation-fill-mode: forwards;
+}
+
+.active::after{
+    content:url(../img/icon-arrow-down.svg);
+    float: right;
+    animation: rotate 0.5s ;
+    animation-fill-mode: forwards;
+
+}
+
+@keyframes rotateup{
+    100%{
+        transform: rotate(180deg);
+    }
+}
+@keyframes rotate{
+    100%{
+        transform: rotate(180deg);
+    }
+}
+.content{
+    overflow: hidden;
+    max-height: 0;
+    text-align: left;
+    transition: max-height 0.2s ease-out;
+}
+@media screen and (min-width:1440px){
+    .white-container{
+        position: absolute;
+        border-radius: 25px;
+        border-width: 0px;
+        background-image: url(../img/bg-pattern-desktop.svg);
+        background-size: 100%;
+        background-repeat: no-repeat;
+        background-position: -520px -265px;
+        background-color:#fff;
+        width: 915px;
+        height: 505px;  
+        margin-top: 129px;
+        margin-bottom: 134px;
+        margin-left: 3.9in;
+        z-index: -1;
+        box-shadow: 0px 20px 40px -20px hsl(238, 29%, 40%); 
+
+    }
+
+    .illustration-container{
+        background-image: url(../img/illustration-woman-online-desktop.svg);
+        background-repeat: no-repeat;
+        background-position-x: -80px;
+        background-position-y: 10px;
+        min-height: 100%;
+    }
+
+    .box-illus{
+        position: relative;
+        top:340px;
+        left:281px;
+
+    
+    }
+
+    .illus-mobile{
+        display: none;
+    }
+
+
+
+}
+
+@media screen and (max-width:375px){
+    .container{
+        padding-top: 10em;
+    }
+ 
+    .white-container{
+        position: absolute;
+        border-radius: 25px;
+        border-width: 0px;
+        background-image: url(../img/bg-pattern-mobile.svg);
+        background-size: 80%;
+        background-position-x: 1.6em;
+        background-repeat: no-repeat;
+        background-color:#fff;
+        width: 320px;
+        height: 560px;  
+        margin-left: 1.8em;
+        z-index: -1; 
+        box-shadow: 0px 20px 40px -20px hsl(238, 29%, 40%); 
+
+    }
+    
+    .header-container{
+        margin-top: 5.2em;
+        margin-left:4.3em;
+        font-size: 1.8em;
+        font-weight: bolder;
+        color:hsl(237, 12%, 33%);
+        
+    }
+    
+    .questions-container{
+        width:110%;
+        margin-top: -1em;
+        margin-left:-1em;
+        padding: 0.1em 0em 1.2em 0em;
+        font-size: 13px;
+        color:hsl(240, 6%, 50%);
+        font-weight: 400;
+        line-height: 1em;
+    }
+    .illus-mobile{
+        position: relative;
+        top: -6.5em;
+        left: 2.5em;
+    }
+    .box-illus{
+        display: none;
+
+    
+    }
+
+}
