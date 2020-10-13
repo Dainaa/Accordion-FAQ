@@ -3,5 +3,5 @@ HTML and CSS files for the Accordion FAQ card challenge at frontendmentor.io:htt
 
 Preview at Vercel: https://accordion-faq.vercel.app/
                    Designed for:
-                    Desktop: 1440px
+                    Desktop: 1440px, and
                     Mobile:  375px
